@@ -1,0 +1,49 @@
+/**
+ * Global styles. The classic template bundles Infima. Brand tokens below match
+ * the AuraCRM app: Aura Violet #6D5EFF (primary), Signal Amber #FF9F1C (accent),
+ * Midnight Ink #14122B (dark surfaces).
+ */
+
+:root {
+  --ifm-color-primary: #6d5eff;
+  --ifm-color-primary-dark: #5847e6;
+  --ifm-color-primary-darker: #5240e0;
+  --ifm-color-primary-darkest: #4433c2;
+  --ifm-color-primary-light: #8073ff;
+  --ifm-color-primary-lighter: #8b7eff;
+  --ifm-color-primary-lightest: #a597ff;
+
+  --ifm-code-font-size: 95%;
+  --ifm-font-weight-bold: 700;
+  --ifm-heading-font-weight: 700;
+  --docusaurus-highlighted-code-line-bg: rgba(109, 94, 255, 0.1);
+
+  /* Aura accent (Signal Amber) — used for subtle highlights. */
+  --aura-accent: #ff9f1c;
+
+  /* Landing hero surface (light). */
+  --aura-hero-from: #f4f2ff;
+  --aura-hero-to: #eae6fb;
+  --aura-hero-fg: #14122b;
+  --aura-hero-muted: #5c5878;
+}
+
+/* Lighter palette for dark mode readability. */
+[data-theme='dark'] {
+  --ifm-color-primary: #9b8cff;
+  --ifm-color-primary-dark: #8172ff;
+  --ifm-color-primary-darker: #7568ff;
+  --ifm-color-primary-darkest: #5847e6;
+  --ifm-color-primary-light: #ab9eff;
+  --ifm-color-primary-lighter: #b6abff;
+  --ifm-color-primary-lightest: #d2caff;
+
+  --ifm-background-color: #0b0a1a;
+  --ifm-background-surface-color: #15132a;
+  --docusaurus-highlighted-code-line-bg: rgba(155, 140, 255, 0.18);
+
+  --aura-hero-from: #14122b;
+  --aura-hero-to: #1b1838;
+  --aura-hero-fg: #eceaf7;
+  --aura-hero-muted: #9d99b8;
+}

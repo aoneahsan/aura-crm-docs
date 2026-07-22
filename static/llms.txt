@@ -1,0 +1,41 @@
+# AuraCRM
+
+> AuraCRM is an ambient, voice-first client operations engine for premium independent professionals
+> (coaches, consultants, therapists, concierge physicians, wealth advisors). A practitioner speaks a
+> short update after a session; AuraCRM transcribes it and produces proposals the practitioner
+> reviews and approves — an engagement-stage change, a style-matched follow-up email, professional
+> tasks, client homework, and overage invoices. Nothing is sent or charged without approval.
+
+## Key facts
+
+- Tagline: "Your back office, run by your voice."
+- Docs: https://auracrm-docs.aoneahsan.com
+- App: https://auracrm.aoneahsan.com
+- Sign-in: Google (web and mobile). No passwords.
+- AI: OpenAI (whisper-1 transcription, gpt-4o-mini reasoning); PII is redacted before the LLM.
+- Voice capture is foreground tap-to-record today; ambient background capture is a future phase.
+- HIPAA-ready architecture; not HIPAA-certified (certification is at go-live).
+- Billing is a direct bank/account transfer via https://aoneahsan.com/payment — no card processor.
+
+## Plans
+
+- Free: $0/mo, 2 AI runs/month.
+- Starter: $49/mo, 10 AI runs/month.
+- Professional: $129/mo, unlimited AI runs.
+- Firm: $299/mo+, unlimited AI runs.
+
+## Docs
+
+- Introduction: https://auracrm-docs.aoneahsan.com/docs/intro
+- Getting started: https://auracrm-docs.aoneahsan.com/docs/getting-started
+- Capture: https://auracrm-docs.aoneahsan.com/docs/features/capture
+- AI proposals: https://auracrm-docs.aoneahsan.com/docs/features/ai-proposals
+- Clients: https://auracrm-docs.aoneahsan.com/docs/features/clients
+- Tasks: https://auracrm-docs.aoneahsan.com/docs/features/tasks
+- Invoices: https://auracrm-docs.aoneahsan.com/docs/features/invoices
+- Client portal: https://auracrm-docs.aoneahsan.com/docs/features/client-portal
+- Admin panel: https://auracrm-docs.aoneahsan.com/docs/features/admin
+- Plans & limits: https://auracrm-docs.aoneahsan.com/docs/plans-and-limits
+- Security & privacy: https://auracrm-docs.aoneahsan.com/docs/security-and-privacy
+- FAQ: https://auracrm-docs.aoneahsan.com/docs/faq
+- Changelog: https://auracrm-docs.aoneahsan.com/docs/changelog
