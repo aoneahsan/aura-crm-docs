@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Build (but don't deploy) on PRs so the required "Build" status check exists.
+  pull_request:
+    branches: [main]
   # Allow manual runs from the Actions tab.
   workflow_dispatch:
 
@@ -41,14 +44,17 @@ jobs:
         run: yarn build
 
       - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
 
       - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
         with:
           path: build
 
   deploy:
     name: Deploy
     needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
