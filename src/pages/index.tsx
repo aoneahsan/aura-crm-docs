@@ -29,12 +29,6 @@ function HomepageHeader() {
           <Link className="button button--secondary button--lg" to="/docs/intro">
             What it is
           </Link>
-          <Link
-            className="button button--outline button--lg"
-            href="https://auracrm.aoneahsan.com"
-          >
-            Open the app
-          </Link>
         </div>
       </div>
     </header>

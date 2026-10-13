@@ -101,11 +101,6 @@ const config: Config = {
         { to: '/docs/getting-started', label: 'Get started', position: 'left' },
         { to: '/docs/changelog', label: 'Changelog', position: 'left' },
         {
-          href: 'https://auracrm.aoneahsan.com',
-          label: 'Open the app',
-          position: 'right',
-        },
-        {
           href: 'https://github.com/aoneahsan/aura-crm-docs',
           label: 'GitHub',
           position: 'right',
@@ -136,7 +131,6 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            { label: 'Open the app', href: 'https://auracrm.aoneahsan.com' },
             {
               label: 'Support',
               href: 'https://aoneahsan.com/payment?project-id=auracrm&project-identifier=com.aoneahsan.auracrm',

@@ -1,16 +1,17 @@
 ---
 title: Getting started
-description: Sign in to AuraCRM with Google, set up your profile, choose a plan, and record your first session.
+description: "What to do after AuraCRM's production release: sign in, set up your profile, and record a session."
 tags: [getting-started, onboarding, sign-in]
 ---
 
 # Getting started
 
-You can be capturing your first session in a few minutes.
+AuraCRM's current production release is pending. This guide describes the workflow built and
+verified locally; follow it once the production service is available.
 
 ## 1. Sign in with Google
 
-Open the app at **[auracrm.aoneahsan.com](https://auracrm.aoneahsan.com)** and choose **Sign in
+After release, open **[auracrm.aoneahsan.com](https://auracrm.aoneahsan.com)** and choose **Sign in
 with Google**. AuraCRM uses Google sign-in on both web and mobile — there is no separate password to
 manage.
 

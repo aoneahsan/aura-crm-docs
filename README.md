@@ -6,7 +6,7 @@ advisors). Talk after a session and AuraCRM drafts your CRM update, follow-up em
 invoices for you to approve.
 
 - **Live docs:** https://auracrm-docs.aoneahsan.com
-- **The app:** https://auracrm.aoneahsan.com
+- **App host:** https://auracrm.aoneahsan.com (current release pending)
 
 Built with [Docusaurus](https://docusaurus.io/). This repository contains documentation only — the
 product source lives in a separate, private repository.
@@ -17,7 +17,7 @@ This project uses **yarn** (Berry, via Corepack).
 
 ```bash
 corepack enable      # once, if yarn 4 is not already active
-yarn install
+yarn install --immutable
 yarn start           # dev server with live reload
 ```
 
@@ -38,8 +38,8 @@ Pushes to `main` build and deploy to GitHub Pages automatically via
 
 ## Contributing
 
-`main` is protected — changes land through a reviewed pull request with a passing CI build. See
-[CONTRIBUTING.md](./CONTRIBUTING.md).
+External contributions use a reviewed pull request with a passing CI build. The owner follows
+the repository's direct-primary workflow. See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Support
 
