@@ -1,5 +1,7 @@
 # AuraCRM public docs
 
+**Last Updated:** 2026-10-20
+
 **Updated:** 2026-10-13. This is the public `aoneahsan/aura-crm-docs` repository on `main`,
 remote `origin`. Its sibling `../aura-crm/` is the private app repository; the parent
 `../` is a separate private `project-root` repository. Search, commit and push from the owning
@@ -27,3 +29,9 @@ approved voice; avoid invented feature, security, medical or compliance claims.
 **Context coverage:** this entire docs repository, including `docs/`, `src/`, and `static/`.
 The fleet tracker at `/home/ahsan/Documents/01-code/docs/tracking/fleet-maintenance-tracker.json`
 records the maintenance run. Last optimized 2026-10-13; next routine context pass 2026-11-12.
+
+## Stop-work Git gate
+
+<!-- RULE:stop-work-git-gate v2026-10-20 -->
+
+Before stopping, commit every legitimate change and work-progress checkpoint in this repository and each independent nested repository, fetch and merge the designated upstream, push the documented working branch, then verify an empty worktree and `0 0` ahead/behind. Never stash, discard, reset, rebase, or force-push. If synchronization is blocked, report the exact repository, branch, blocker, and next action instead of calling the work complete. The full workflow remains authoritative in `~/.claude/rules/git-workflow.md`.
