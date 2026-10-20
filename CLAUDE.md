@@ -2,6 +2,12 @@
 
 **Last Updated:** 2026-10-20
 
+| Context | Value |
+|---|---|
+| Last optimized | 2026-10-13 |
+| Next routine optimization eligible | 2026-11-12 |
+| Guide bytes | 3445 |
+
 **Updated:** 2026-10-20. This is the public `aoneahsan/aura-crm-docs` repository on `main`,
 remote `origin`. Its sibling `../aura-crm/` is the private app repository; the parent
 `../` is a separate private `project-root` repository. Search, commit and push from the owning
