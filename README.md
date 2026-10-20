@@ -1,46 +1,53 @@
 # AuraCRM Docs
 
-The public documentation site for **AuraCRM** — an ambient, voice-first client operations engine for
-premium independent professionals (coaches, consultants, therapists, concierge physicians, wealth
-advisors). Talk after a session and AuraCRM drafts your CRM update, follow-up email, tasks, and
-invoices for you to approve.
+**Last Updated:** 2026-10-20
 
-- **Live docs:** https://auracrm-docs.aoneahsan.com
-- **App host:** https://auracrm.aoneahsan.com (current release pending)
+The public documentation site for AuraCRM, a voice-first client operations app for independent
+professionals. The current app release is pending; these docs describe the locally verified product.
 
-Built with [Docusaurus](https://docusaurus.io/). This repository contains documentation only — the
-product source lives in a separate, private repository.
+- **Live docs:** <https://auracrm-docs.aoneahsan.com>
+- **App host:** <https://auracrm.aoneahsan.com> (current release pending)
 
-## Run locally
+Built with Docusaurus. This repository contains public documentation; the product source remains in a
+separate private repository.
 
-This project uses **yarn** (Berry, via Corepack).
+<a id="run-locally"></a>
+## 🧰 Run locally&nbsp;[#](#run-locally)
+
+Use Node 24+ and Yarn 4.18.1 through Corepack.
 
 ```bash
-corepack enable      # once, if yarn 4 is not already active
+corepack enable
 yarn install --immutable
-yarn start           # dev server with live reload
+yarn start
 ```
 
-## Build
+<a id="build-and-verify"></a>
+## ✅ Build and verify&nbsp;[#](#build-and-verify)
 
 ```bash
-yarn build           # static output in ./build — also validates every internal link
-yarn serve           # preview the production build (required to verify search)
+yarn gates
+yarn serve
 ```
 
-Production builds ship without source maps by default.
+`yarn gates` runs TypeScript and the production Docusaurus build, including internal link validation.
+Serve the generated `build/` directory and check a direct docs route on desktop and mobile before pushing.
+Production builds omit source maps.
 
-## Deploying
+<a id="deploy"></a>
+## 🚀 Deploy&nbsp;[#](#deploy)
 
-Pushes to `main` build and deploy to GitHub Pages automatically via
-`.github/workflows/deploy.yml`. The custom domain is set in `static/CNAME`
-(`auracrm-docs.aoneahsan.com`).
+Pushes to `main` build and deploy through [the Pages workflow](.github/workflows/deploy.yml). The custom
+domain is stored in `static/CNAME`.
 
-## Contributing
+<a id="contribute"></a>
+## 🤝 Contribute&nbsp;[#](#contribute)
 
-External contributions use a reviewed pull request with a passing CI build. The owner follows
-the repository's direct-primary workflow. See [CONTRIBUTING.md](./CONTRIBUTING.md).
+External contributions use a reviewed pull request with a passing build. The owner works directly on
+`main`. Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing public content.
 
-## Support
+<a id="support"></a>
+## 💬 Support&nbsp;[#](#support)
 
-To support AuraCRM: https://aoneahsan.com/payment · Questions: **aoneahsan@gmail.com**
+Use [the AuraCRM support page](https://aoneahsan.com/payment?project-id=auracrm&project-identifier=com.aoneahsan.auracrm)
+or email **aoneahsan@gmail.com**.

@@ -2,7 +2,7 @@
 
 **Last Updated:** 2026-10-20
 
-**Updated:** 2026-10-13. This is the public `aoneahsan/aura-crm-docs` repository on `main`,
+**Updated:** 2026-10-20. This is the public `aoneahsan/aura-crm-docs` repository on `main`,
 remote `origin`. Its sibling `../aura-crm/` is the private app repository; the parent
 `../` is a separate private `project-root` repository. Search, commit and push from the owning
 repository. Never copy app environment files, keys or unpublished private records here.
@@ -21,7 +21,7 @@ browser, including a direct docs route, navigation and console check, before pus
 | A specific product claim | The page in `docs/`, then the app's current source/records |
 | Deployment | `.github/workflows/deploy.yml`, GitHub Pages run, live custom domain |
 
-Use the manifest's Yarn 4.17.1 and `yarn install --immutable`, `yarn typecheck`, `yarn build`.
+Use Node 24+ and the manifest's Yarn 4.18.1. Run `yarn install --immutable` and `yarn gates`.
 Do not state that the current app code is live: the app's production release is a separate gate
 in `../aura-crm/docs/MANUAL-TASKS.md`. Public copy must use verified facts and the project's
 approved voice; avoid invented feature, security, medical or compliance claims.
@@ -29,6 +29,19 @@ approved voice; avoid invented feature, security, medical or compliance claims.
 **Context coverage:** this entire docs repository, including `docs/`, `src/`, and `static/`.
 The fleet tracker at `/home/ahsan/Documents/01-code/docs/tracking/fleet-maintenance-tracker.json`
 records the maintenance run. Last optimized 2026-10-13; next routine context pass 2026-11-12.
+Package and release maintenance completed 2026-10-20 and is next routinely eligible 2026-11-19.
+
+## Current maintenance state
+
+The 2026-10-20 pass updated every direct package to its current eligible release, moved the project to
+Yarn 4.18.1 and Node 24+, satisfied the search plugin peers, and upgraded the Pages workflow to the current
+action majors. Typecheck, production build, and desktop/mobile Chrome checks of
+`/docs/getting-started` pass. The recursive audit is reduced to `braces@3.0.3`, for which no fixed release
+exists, plus the `whatwg-encoding` deprecation inherited through the search indexer.
+
+Patched transitive resolutions are temporary. `@swc/html` uses the first upstream fixed nightly because no
+fixed stable release exists; replace it with the first stable fixed release when Docusaurus adopts one.
+Remove each other override when its parent dependency adopts a safe release.
 
 ## Stop-work Git gate
 

@@ -2,7 +2,7 @@
   "name": "aura-crm-docs",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "yarn@4.17.1",
+  "packageManager": "yarn@4.18.1+sha512.b2e1e7524f654f2749d32b4ebcb4622473cb5bcbc485df2007e12a154e50162a4d795526768bc5f5b8f81717bfd79deb2472813d86fb5ae2eb551fa9c872b08f",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -13,24 +13,28 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "gates": "yarn typecheck && yarn build"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.2",
     "@docusaurus/faster": "3.10.2",
+    "@docusaurus/plugin-content-docs": "3.10.2",
     "@docusaurus/preset-classic": "3.10.2",
-    "@easyops-cn/docusaurus-search-local": "^0.52.1",
-    "@mdx-js/react": "^3.0.0",
-    "clsx": "^2.0.0",
-    "prism-react-renderer": "^2.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@docusaurus/theme-common": "3.10.2",
+    "@easyops-cn/docusaurus-search-local": "^0.55.3",
+    "@mdx-js/react": "^3.1.1",
+    "clsx": "^2.1.1",
+    "prism-react-renderer": "^2.4.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.10.2",
     "@docusaurus/tsconfig": "3.10.2",
     "@docusaurus/types": "3.10.2",
-    "@types/react": "^19.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "19.3.0",
     "typescript": "~6.0.2"
   },
   "browserslist": {
@@ -46,6 +50,30 @@
     ]
   },
   "engines": {
-    "node": ">=20.0"
+    "node": ">=24.0.0"
+  },
+  "resolutions": {
+    "@swc/html": "1.15.47-nightly-20260729.1",
+    "brace-expansion": "1.1.21",
+    "colord": "2.9.4",
+    "compression": "1.8.2",
+    "fast-uri": "3.1.8",
+    "http-cache-semantics": "4.3.0",
+    "image-size": "2.0.4",
+    "joi": "17.13.8",
+    "js-yaml": "4.3.2",
+    "nanoid": "3.3.18",
+    "postcss": "8.5.31",
+    "postcss-selector-parser": "7.1.7",
+    "proxy-addr": "2.0.8",
+    "qs": "6.16.1",
+    "serialize-javascript": "7.1.2",
+    "shell-quote": "1.12.0",
+    "source-map-js": "1.2.2",
+    "svgo": "3.3.5",
+    "tinypool": "2.2.0",
+    "undici@npm:^7.19.0": "npm:7.29.1",
+    "undici@npm:^8.4.1": "npm:8.12.3",
+    "uuid": "11.1.1"
   }
 }
